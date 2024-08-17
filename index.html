@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container header-container--first">
+                <img src="images/headerLogo.svg" alt="логотип" class="header-logo-img">
+                <h1 class="header-title">Weather</h1>
+            </div>
+            <div class="header-container header-container--second">
+                <img src="images/theme.svg" alt="тема" class="header-theme-img">
+                <input type="text" class="header-search">
+            </div>
+        </header>
+        <div class="inner-wrapper">
+            <div class="container container--first">
+                <section class="current-day">
+                    <p class="current-day__temperature"></p>
+                    <!-- <img src="images/curWeather.svg" alt="текущая погода" class="current-day__img"> -->
+                    <p class="current-day__day">Сегодня</p>
+                    <p class="current-day__time">Время:</p>
+                    <p class="current-day__city">Город:</p>
+                </section>
+            </div>
+            <div class="container container--second">
+                <section class="day-info">
+                    <div class="day-info__content">
+                        <div class="ellipse-background">
+                            <img src="images/thermometer.svg" alt="термометр">
+                        </div>
+                        <p class="day-info__text">Температура</p>
+                        <p class="day-info__desc"></p>
+                    </div>
+                    <div class="day-info__content">
+                        <div class="ellipse-background">
+                            <img src="images/humidity.svg" alt="влажность">
+                        </div>
+                        <p class="day-info__text">Давление</p>
+                        <p class="day-info__desc"></p>
+                    </div>
+                    <div class="day-info__content">
+                        <div class="ellipse-background">
+                            <img src="images/downfall.svg" alt="">
+                        </div>
+                        <p class="day-info__text">Осадки</p>
+                        <p class="day-info__desc"></p>
+                    </div>
+                    <div class="day-info__content">
+                        <div class="ellipse-background">
+                            <img src="images/wind.svg" alt="">
+                        </div>
+                        <p class="day-info__text">Ветер</p>
+                        <p class="day-info__desc"></p>
+                    </div>
+                </section>
+            </div>
+            <div class="container container--third">
+                <section class="filter-cards">
+                    <button class="filter-cards__btn week-btn">На неделю</button>
+                    <button class="filter-cards__btn  month-btn"> На месяц</button>
+                    <button class="filter-cards__btn ten-days-btn">На 10 дней</button>
+                    <button class="filter-cards__btn cancel-btn">Отменить</button>
+                </section>
+                <div class="inner-container">
+                    <section class="weather-cards-info">
+                        <ul class="cards-info-list">
+                            <li class="info-list-item info-list-item--one">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--two">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--three">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--four">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--five">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--six">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                            <li class="info-list-item info-list-item--seven">
+                                <h3 class="list-item-title">Сегодня</h3>
+                                <p class="list-item__date">28 авг</p>
+                                <img src="images/sun-and-rain.svg" alt="погода" class="list-item__img">
+                                <p class="list-item__max-degr">+18°</p>
+                                <p class="list-item__min-degr">+15°</p>
+                                <p class="list-item__desc">Облачно</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
